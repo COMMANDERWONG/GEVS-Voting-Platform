@@ -39,10 +39,10 @@ const insertData = async () => {
     .set({
       constituency: "northern-kunlun-mountain",
       result: [
-        { name: "Nero Claudius", party: "Red Party", vote: "0" },
-        { name: "Artoria Pandragon", party: "Blue Party", vote: "0" },
-        { name: "Gilgamesh", party: "Yellow Party", vote: "0" },
-        { name: "Siegfried", party: "Independent", vote: "0" },
+        { name: "Atalanta", party: "Red Party", vote: "0" },
+        { name: "Euryale", party: "Blue Party", vote: "0" },
+        { name: "Arash", party: "Yellow Party", vote: "0" },
+        { name: "Cú Chulainn", party: "Independent", vote: "0" },
       ],
     });
   await db
@@ -51,10 +51,10 @@ const insertData = async () => {
     .set({
       constituency: "western-shangri-la",
       result: [
-        { name: "Nero Claudius", party: "Red Party", vote: "0" },
-        { name: "Artoria Pandragon", party: "Blue Party", vote: "0" },
-        { name: "Gilgamesh", party: "Yellow Party", vote: "0" },
-        { name: "Siegfried", party: "Independent", vote: "0" },
+        { name: "Gaius Julius Caesar", party: "Red Party", vote: "0" },
+        { name: "Gilles de Rais", party: "Blue Party", vote: "0" },
+        { name: "Chevalier d'Eon", party: "Yellow Party", vote: "0" },
+        { name: "Robin Hood", party: "Independent", vote: "0" },
       ],
     });
   await db
@@ -63,10 +63,10 @@ const insertData = async () => {
     .set({
       constituency: "naboo-vallery",
       result: [
-        { name: "Nero Claudius", party: "Red Party", vote: "0" },
-        { name: "Artoria Pandragon", party: "Blue Party", vote: "0" },
-        { name: "Gilgamesh", party: "Yellow Party", vote: "0" },
-        { name: "Siegfried", party: "Independent", vote: "0" },
+        { name: "Elizabeth Báthory", party: "Red Party", vote: "0" },
+        { name: "Musashibō Benkei", party: "Blue Party", vote: "0" },
+        { name: "Leonidas I", party: "Yellow Party", vote: "0" },
+        { name: "Romulus", party: "Independent", vote: "0" },
       ],
     });
   await db
@@ -75,10 +75,10 @@ const insertData = async () => {
     .set({
       constituency: "new-felucia",
       result: [
-        { name: "Nero Claudius", party: "Red Party", vote: "0" },
-        { name: "Artoria Pandragon", party: "Blue Party", vote: "0" },
-        { name: "Gilgamesh", party: "Yellow Party", vote: "0" },
-        { name: "Siegfried", party: "Independent", vote: "0" },
+        { name: "Medusa", party: "Red Party", vote: "0" },
+        { name: "Georgios", party: "Blue Party", vote: "0" },
+        { name: "Edward Teach", party: "Yellow Party", vote: "0" },
+        { name: "Boudica", party: "Independent", vote: "0" },
       ],
     });
   await db.ref("results").set({
