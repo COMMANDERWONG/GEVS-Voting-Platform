@@ -15,6 +15,7 @@
 * This system uses a locally signed SSL certificate file cert.crt and private key private.key. Since there's no authenticated authority for these certs, browsers may prompt the localhost as unsafe. Proceed to the localhost when such error pops up. 
 * This system uses localhost:3000 as the main URL, please test all requests using this URL. e.g. : GET "https://localhost:3000/gevs/results"
 * All candidates information are automatically created when initializing the database. the vote count and results can also be reset when the database is re-initialized. 
+* The only default election officer account is automatically created when initializing the database. Adding new election officer account is not possible. 
 * When the election is ended by the officer. It can't be started again until the database is refreshed. The winner will be declared automatically when the election stops. 
 * This system uses cookies and camera. Please enable these permissions for the browser when testing.
 * All candidates are randomly generated historical/mythical figures. Please treat them as fictional characters.
