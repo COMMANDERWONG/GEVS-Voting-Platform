@@ -187,7 +187,7 @@ export default function Dashboard() {
         setStatus("Election has not started.");
         setResult("Election has not started.");
         break;
-      case "Started":
+      case "Pending":
         setStatus("Election has started.");
         setResult("Election is ongoing");
         break;

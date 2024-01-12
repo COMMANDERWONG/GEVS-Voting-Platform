@@ -175,7 +175,7 @@ app.post("/api/vote/", checkJwt, async (req, res) => {
   const { password, party, constituency } = req.body;
   const checkStatusSnapshot = await db.ref("results").once("value");
   const electionStatus = checkStatusSnapshot.val().status;
-  if (electionStatus !== "Started") {
+  if (electionStatus !== "Pending") {
     res.status(400).send({
       message: "You can't vote now, the election has " + electionStatus,
     });
@@ -286,14 +286,14 @@ app.get("/api/election/:option", checkJwt, async (req, res) => {
         console.log("Invalid option:", option);
         break;
       case "start":
-        if (result.status === "Started") {
+        if (result.status === "Pending") {
           res.status(400).send({ message: "Election already started" });
           break;
         } else if (result.status === "Completed") {
           res.status(400).send({ message: "Election already completed" });
           break;
         } else {
-          result.status = "Started";
+          result.status = "Pending";
           result.winner = "Pending";
           db.ref("results").set(result);
           res.status(200).send({ message: "Election started" });
