@@ -292,9 +292,7 @@ app.get("/gevs/constituency/:name", async (req, res) => {
 
     if (constituency) {
       // Send JSON response with the constituency data
-      res.status(successStatus).json({
-        data: constituency,
-      });
+      res.status(successStatus).json(constituency);
     } else {
       // Send response with a status code indicating that the constituency was not found
       res.status(notFoundStatus).send("Constituency not found");
